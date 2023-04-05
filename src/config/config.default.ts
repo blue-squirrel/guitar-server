@@ -21,4 +21,5 @@ export default {
   view: {
     defaultViewEngine: 'nunjucks',
   },
+  fileOs: 'https://blue-squirrel-1257450790.cos.ap-beijing.myqcloud.com' // 文件OS地址
 } as MidwayConfig;
