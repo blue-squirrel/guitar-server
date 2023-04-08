@@ -4,12 +4,13 @@ import {
   Column,
   CreateDateColumn,
   PrimaryColumn,
+  PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
 
 @EntityModel('score')
 export class Score {
-  @PrimaryColumn({ type: 'bigint' })
+  @PrimaryGeneratedColumn({ type: 'bigint' })
   id: number;
 
   @Column({ length: 20 })

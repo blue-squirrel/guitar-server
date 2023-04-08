@@ -10,17 +10,15 @@ export class ScoreController {
   @Inject()
   scoreService: ScoreService;
 
-//   @Post('/create', { description: '创建' })
-//   async create(@Body() user: User): Promise<User> {
-//     console.log(user, 88)
-//     Object.assign(user, {
-//       id: new Date().getTime(),
-//       regtime: new Date(),
-//       updaterId: 1,
-//       createrId: 1,
-//     });
-//     return this.userService.save(user);
-//   }
+  @Post('/upload', { description: '上传' })
+  async create(@Body() score: Score): Promise<Score> {
+    Object.assign(score, {
+      regtime: new Date(),
+      updaterId: 1,
+      createrId: 1,
+    });
+    return this.scoreService.save(score);
+  }
 
   @Get('/findAll', { description: '查找全部' })
     async findAll(): Promise<any> {
