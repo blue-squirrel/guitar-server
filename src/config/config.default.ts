@@ -10,7 +10,7 @@ export default {
   orm: {
     type: 'mysql',
     // host: 'mysql', // docker?
-    host: '127.0.0.1', // 改成你的mysql数据库IP 
+    host: '180.76.228.38', // 改成你的mysql数据库IP
     port: 3306, // 改成你的mysql数据库端口
     username: 'root', // 改成你的mysql数据库用户名（需要有创建表结构权限）
     password: '123456', // 改成你的mysql数据库密码
