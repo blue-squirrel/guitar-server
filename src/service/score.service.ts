@@ -1,4 +1,4 @@
-// src/service/score.service.ts
+// src/service/score.service.ts 
 import { Provide } from '@midwayjs/decorator';
 import { Score } from '../entity/score';
 import { InjectEntityModel } from '@midwayjs/orm';
